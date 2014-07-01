@@ -26,5 +26,7 @@ class ApplicationController < ActionController::Base
     end
 
     Client.current = client
+
+    prepend_view_path(Client.current.view_path)
   end
 end

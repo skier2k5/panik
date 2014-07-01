@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root :to => 'panik/index#index'
+  root :to => 'panik_media/index#index'
 end

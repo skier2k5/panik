@@ -11,4 +11,8 @@ class Client < ActiveRecord::Base
   def self.current
     Thread.current[:current_client]
   end
+
+  def view_path
+    "#{Rails.root}/app/views/#{self.name}"
+  end
 end
