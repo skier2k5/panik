@@ -1,7 +1,5 @@
 class Client < ActiveRecord::Base
   def self.current=(client_name)
-    return Thread.current[:current_client] if Thread.current[:current_client]
-
     client = Client.where(:name => client_name).first
     raise ArgumentError, "Unknown Client: #{client_name}" unless client
 
@@ -12,7 +10,7 @@ class Client < ActiveRecord::Base
     Thread.current[:current_client]
   end
 
-  def view_path
-    "#{Rails.root}/app/views/#{self.name}"
+  def search_path
+    "#{Rails.root}/app/views/#{self.view_path}"
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140628184604) do
+ActiveRecord::Schema.define(version: 20140704220943) do
 
   create_table "arrivals", force: true do |t|
     t.text     "uri"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 20140628184604) do
   create_table "clients", force: true do |t|
     t.string "name"
     t.string "host_name"
+    t.string "title"
+    t.string "view_path"
   end
 
   create_table "pageviews", force: true do |t|
