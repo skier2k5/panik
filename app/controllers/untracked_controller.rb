@@ -1,2 +1,2 @@
-class UntrackedController < ApplicationController::Base
+class UntrackedController < ApplicationController
 end
