@@ -23,9 +23,13 @@
 
   <div class="starter-template">
     <h1>Celebrity Headlines</h1>
-    <h3>Sites Portfolio</h3>
+    <h3>Headlines</h3>
     <ol>
-      <li>Newest Site?</li>
+      <% @headlines.each do |headline| %>
+        <li>
+          <p><%= headline.title %></p>
+        </li>
+      <% end %>
     </ol>
   </div>
 

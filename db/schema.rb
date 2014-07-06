@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140704220943) do
+ActiveRecord::Schema.define(version: 20140705203244) do
 
   create_table "arrivals", force: true do |t|
     t.text     "uri"
@@ -29,12 +29,52 @@ ActiveRecord::Schema.define(version: 20140704220943) do
   add_index "arrivals", ["traffic_source_id"], name: "index_arrivals_on_traffic_source_id", using: :btree
   add_index "arrivals", ["updated_at"], name: "index_arrivals_on_updated_at", using: :btree
 
+  create_table "categories", force: true do |t|
+    t.string "name", null: false
+  end
+
+  add_index "categories", ["name"], name: "index_categories_on_name", unique: true, using: :btree
+
+  create_table "celeb_headline_categories", force: true do |t|
+    t.integer "category_id",       null: false
+    t.integer "celeb_headline_id", null: false
+  end
+
+  add_index "celeb_headline_categories", ["category_id"], name: "index_celeb_headline_categories_on_category_id", using: :btree
+  add_index "celeb_headline_categories", ["celeb_headline_id"], name: "index_celeb_headline_categories_on_celeb_headline_id", using: :btree
+
+  create_table "celeb_headlines", force: true do |t|
+    t.text     "title",           null: false
+    t.text     "url",             null: false
+    t.datetime "posted_at",       null: false
+    t.string   "source",          null: false
+    t.string   "hashed_headline", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "celeb_headlines", ["created_at"], name: "index_celeb_headlines_on_created_at", using: :btree
+  add_index "celeb_headlines", ["hashed_headline"], name: "index_celeb_headlines_on_hashed_headline", unique: true, using: :btree
+  add_index "celeb_headlines", ["source"], name: "index_celeb_headlines_on_source", using: :btree
+  add_index "celeb_headlines", ["updated_at"], name: "index_celeb_headlines_on_updated_at", using: :btree
+
   create_table "clients", force: true do |t|
     t.string "name"
     t.string "host_name"
     t.string "title"
     t.string "view_path"
   end
+
+  create_table "headline_clicks", force: true do |t|
+    t.integer  "arrival_id",        null: false
+    t.integer  "celeb_headline_id", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "headline_clicks", ["arrival_id"], name: "index_headline_clicks_on_arrival_id", using: :btree
+  add_index "headline_clicks", ["celeb_headline_id"], name: "index_headline_clicks_on_celeb_headline_id", using: :btree
+  add_index "headline_clicks", ["created_at"], name: "index_headline_clicks_on_created_at", using: :btree
 
   create_table "pageviews", force: true do |t|
     t.string   "uri"
