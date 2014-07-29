@@ -15,3 +15,11 @@ Client.create_or_update(
   :title => "Celeberity Headlines",
   :view_path => "celeb_headlines"
 )
+
+Client.create_or_update(
+  :id => 3,
+  :name => "kutorable",
+  :host_name => "kutorable.com",
+  :title => "Kutorable Pets",
+  :view_path => "kutorable"
+)
