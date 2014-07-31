@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= Client.current.title %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- shim partial here --> 
+  <%= render 'layouts/shim'%>
+</head>
+<body>
+
+<!-- header partial rendered here -->
+<%= render 'layouts/header' %>
+
+<!-- container wraps all page content -->
+<div class="container">
+	<!-- starter template div here -->
+	<div class="starter-template">
+		<!-- content of all the pages are 'yielded' here -->
+		<%= yield %>
+		<!-- footer is yielded here -->	
+		<%= render 'layouts/footer' %>
+	</div>
+</div>
+
+<!-- added necessary js files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
