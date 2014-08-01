@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140731014613) do
+ActiveRecord::Schema.define(version: 20140801011813) do
+
+  create_table "animal_categories", force: true do |t|
+    t.string "name"
+  end
+
+  create_table "animal_picture_categories", force: true do |t|
+    t.integer "animal_picture_id",  null: false
+    t.integer "animal_category_id", null: false
+  end
+
+  add_index "animal_picture_categories", ["animal_category_id"], name: "index_animal_picture_categories_on_animal_category_id", using: :btree
+  add_index "animal_picture_categories", ["animal_picture_id", "animal_category_id"], name: "index_animal_picture_categories_on_api_and_aci", unique: true, using: :btree
+  add_index "animal_picture_categories", ["animal_picture_id"], name: "index_animal_picture_categories_on_animal_picture_id", using: :btree
 
   create_table "animal_pictures", force: true do |t|
     t.string "title"
