@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140801011813) do
+ActiveRecord::Schema.define(version: 20140801025604) do
 
   create_table "animal_categories", force: true do |t|
     t.string "name"
@@ -31,6 +31,19 @@ ActiveRecord::Schema.define(version: 20140801011813) do
     t.string "file_name", null: false
     t.text   "caption"
   end
+
+  create_table "animal_votes", force: true do |t|
+    t.integer  "arrival_id"
+    t.integer  "animal_picture_id"
+    t.string   "vote"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "animal_votes", ["animal_picture_id"], name: "index_animal_votes_on_animal_picture_id", using: :btree
+  add_index "animal_votes", ["arrival_id"], name: "index_animal_votes_on_arrival_id", using: :btree
+  add_index "animal_votes", ["created_at"], name: "index_animal_votes_on_created_at", using: :btree
+  add_index "animal_votes", ["vote"], name: "index_animal_votes_on_vote", using: :btree
 
   create_table "arrivals", force: true do |t|
     t.text     "uri"
@@ -120,5 +133,13 @@ ActiveRecord::Schema.define(version: 20140801011813) do
   add_index "users", ["created_at"], name: "index_users_on_created_at", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", using: :btree
   add_index "users", ["updated_at"], name: "index_users_on_updated_at", using: :btree
+
+  create_table "voting_aggregates", force: true do |t|
+    t.integer "animal_picture_id"
+    t.integer "cute_votes",        default: 0, null: false
+    t.integer "ugly_votes",        default: 0, null: false
+  end
+
+  add_index "voting_aggregates", ["animal_picture_id"], name: "index_voting_aggregates_on_animal_picture_id", using: :btree
 
 end

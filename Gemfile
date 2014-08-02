@@ -10,5 +10,3 @@ gem 'feedjira'
 group :development do
   gem 'spring'
 end
-
-
