@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   private
 
   def set_client
-    if Rails.env.development?
+    if Rails.env.development? || Rails.env.test?
       if request.subdomains.blank?
         client = request.domain
       else
@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
       client = ENV['CLIENT']
     end
 
-    Client.current = client
+    Client.current = client || ""
 
     prepend_view_path(Client.current.search_path)
   end

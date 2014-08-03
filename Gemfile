@@ -24,5 +24,3 @@ gem 'sass-rails', '4.0.3'
 group :development do
   gem 'spring'
 end
-
-

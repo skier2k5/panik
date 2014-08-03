@@ -1,0 +1,4 @@
+test:
+  name: test
+  host_name: "test.com"
+  title: "Test"
