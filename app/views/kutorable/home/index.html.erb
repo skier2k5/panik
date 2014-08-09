@@ -1,7 +1,12 @@
 <% provide :title, "" %>
 
-<%= image_tag("kutorable/landing_construction.png", id: "construction_banner") %>
-
+<div class = "row">
+	<div class = "col-lg-6 col-lg-offset-3">
+		<div class = "image-cropper">
+			<img class ="centered" src="../../assets/animal_pictures/<%= @picture.file_name %>" height="300" />
+		</div>
+	</div>
+</div>
 
 
 
