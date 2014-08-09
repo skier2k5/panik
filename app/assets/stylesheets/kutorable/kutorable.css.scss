@@ -19,6 +19,10 @@ body {
 
 /* index css */
 
+.test{
+ // background-color: green;
+}
+
 .image-cropper {
   position: relative;
   width: 300px;
@@ -28,9 +32,50 @@ body {
 }
 
 .centered{
- // position: absolute;
+  position: absolute;
   left: -0%;
   top: -0%;
+}
+
+.voting_canvas{
+  background-color: white;
+  padding: 5px 1px 5px 1px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#voting_buttons{
+ // background-color: red;
+  padding: 0;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+
+  ul{
+ //   background-color: green;
+  }
+
+  li{
+    background-color: #E0FFFF;
+    min-width: 150px;
+    min-height: 75px;
+    border-radius: 10px;
+    padding-top: 10px;
+  }
+
+  li:hover{
+    background-color: #FF9E99;
+    font-size: 30px;
+    padding-top: 5px;
+  }
+  a:hover{
+    background-color: #FF9E99;
+  //  color: #0066cc;
+  }
+  a{
+    color: black;
+  }
 }
 
 
@@ -70,7 +115,7 @@ footer{
 }
 
 #footer_icon {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 //  background-color:red;
 
@@ -87,7 +132,7 @@ footer{
         background-color: inherit;
       }
       a:hover{
-        
+
       }
     }
   }

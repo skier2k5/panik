@@ -1,10 +1,22 @@
 <% provide :title, "" %>
 
 <div class = "row">
-	<div class = "col-lg-6 col-lg-offset-3">
-		<div class = "image-cropper">
-			<img class ="centered" src="../../assets/animal_pictures/<%= @picture.file_name %>" height="300" />
-		</div>
+	<div class = "col-lg-6 col-lg-offset-3 test">
+    <div class="voting_canvas">
+      <div class = "row">
+    		<div class = "col-lg-8 col-lg-offset-1 image-cropper">
+    			<img class ="centered" src="../../assets/animal_pictures/<%= @picture.file_name %>" height="300" />
+    		</div>
+      </div>
+      <div class = "row">
+        <div class = "col-lg-10 col-lg-offset-1" id="voting_buttons">    
+          <ul class=" nav nav-pills">
+            <li><a href="#">Meh.</a></li>
+            <li><a href="#">AWW!</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 	</div>
 </div>
 
