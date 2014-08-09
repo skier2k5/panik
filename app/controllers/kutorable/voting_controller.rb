@@ -28,5 +28,6 @@ class Kutorable::VotingController < UntrackedController
     end
 
     render :text => "Blank Vote Data"
+
   end
 end

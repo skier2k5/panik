@@ -41,25 +41,24 @@ body {
 .voting_canvas{
   background-color: white;
   padding: 5px 1px 5px 1px;
+  width: 325px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
 #voting_buttons{
- // background-color: red;
   padding: 0;
   color: black;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 10px;
 
   ul{
-    margin: 15px 0 10px 0;
+    margin: 0px 0 10px 0;
   }
 
   li{
     background-color: #E0FFFF;
-    min-width: 150px;
+    min-width: 49%;
     min-height: 75px;
     border-radius: 10px;
     padding-top: 10px;
@@ -76,6 +75,19 @@ body {
   }
   a{
     color: black;
+  }
+}
+
+.table{
+  margin-top: 10px;
+  table-layout: fixed;
+  tbody{
+    tr{
+      td{
+        border: 0;
+        text-align: center;
+      }
+    } 
   }
 }
 
@@ -124,16 +136,16 @@ footer{
  //   background-color: blue;
 
     li{
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 8px;
+      padding-right: 8px;
    //   background-color: green;
       a{
-        padding: 0px;
+        padding: 2px;
         color: #FF6961;
         background-color: inherit;
       }
       a:hover{
-
+        background-color: #FF4137;
       }
     }
   }

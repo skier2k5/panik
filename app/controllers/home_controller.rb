@@ -23,6 +23,7 @@ class HomeController < TrackedController
 
   def kutorable_index
     @picture = AnimalPicture.all.order("rand()").first
+    @current_arrival = current_arrival
   end
 
   def panikmedia_index

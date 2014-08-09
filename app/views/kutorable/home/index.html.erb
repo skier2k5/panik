@@ -8,11 +8,26 @@
     			<img class ="centered" src="../../assets/animal_pictures/<%= @picture.file_name %>" height="300" />
     		</div>
       </div>
+
+       <div class = "row">
+        <div class = "col-lg-8 col-lg-offset-2" id="voting_buttons">    
+          <table class = "table voting-tallies">
+              <tbody>
+                <tr>
+                  <td width="47%">X: 50</th>
+                  <td width="6">|</th>
+                  <td width="47%">O: 400 </th>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+
       <div class = "row">
         <div class = "col-lg-10 col-lg-offset-1" id="voting_buttons">    
           <ul class=" nav nav-pills">
-            <li><a href="#">meh.</a></li>
-            <li><a href="#">AWW!</a></li>
+            <li><%= link_to("meh.", vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true)%></li>
+            <li><%= link_to("AWW!", vote_path(:aid => 1, :apid => 1, :vote => "cute"), :remote => true)%></li>
           </ul>
         </div>
       </div>
