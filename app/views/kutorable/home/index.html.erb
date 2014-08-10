@@ -1,6 +1,4 @@
 <% provide :title, "" %>
-<!--
-vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true-->
 
 <div class="container">
   <div class="row">
@@ -22,8 +20,8 @@ vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true-->
           </table>
    
           <ul class="nav nav-pills">
-            <li><%= link_to("meh.", root_path)%></li>
-            <li><%= link_to("AWW!", root_path)%></li>
+            <li><%= link_to("meh.", vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true)%></li>
+            <li><%= link_to("AWW!", vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true)%></li>
           </ul>
         </div>
       </div>
