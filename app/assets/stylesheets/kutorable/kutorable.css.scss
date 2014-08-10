@@ -17,7 +17,7 @@ body {
 
 .voting_canvas{
   background-color: white;
-  padding: 5px;
+  padding: 10px;
   margin: 0 auto 10px auto;
   width: 300px;
   border-radius: 10px;
@@ -74,7 +74,6 @@ body {
 
       &:hover{
         background-color: #FF9E99;
-      //  color: #0066cc;
       }
     }
   }
@@ -128,21 +127,14 @@ footer {
   margin-top: 10px;
 }
 
-#footer_nav {
-//  background-color: black;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 
 #footer_icon {
   margin-top: 20px;
   margin-bottom: 10px;
-//  background-color:red;
 
   ul{
     text-align: center;
- //   background-color: blue;
-
     li{
       display: inline-block;
       margin-left: 10px;
@@ -150,11 +142,38 @@ footer {
       &:first-child {
         margin-left: 0;
       }
-   //   background-color: green;
       a{
         display: block;
         color: #FF6961;
         background-color: inherit;
+      }
+    }
+  }
+}
+
+#footer_nav {
+  margin: 20px auto 10px auto;
+ ul{
+    text-align: center;
+    li{
+      display: inline-block;
+      border-radius: 5px;
+      margin-left: 10px;
+
+      &:hover{
+          background-color: white;
+        }
+
+      &:first-child {
+        margin-left: 0;
+      }
+      a{
+        padding: 10px;
+        display: block;
+        
+        &:hover{
+          text-decoration: none;
+        }
       }
     }
   }
