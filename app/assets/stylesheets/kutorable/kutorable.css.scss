@@ -19,21 +19,23 @@ body {
   background-color: white;
   padding: 10px;
   margin: 0 auto 10px auto;
-  width: 300px;
+  min-width: 300px;
+  max-width: 450px;
   border-radius: 10px;
   margin-bottom: 10px;
 
   .image-cropper {
     position: relative;
     width: 100%;
-    max-height: 320px;
+    height: 320px;
     overflow: hidden;
-    border: 2px black solid;
+   // border: 2px black solid;
 
     img {
       display: block;
       margin: 0 auto;
       max-height: 100%;
+      max-width:100%;
     }
   }
 }
