@@ -16,3 +16,11 @@ panik
 11. Run $rake db:seed
 12. Run $rvm gemset use global
 13. Run $bundle install
+
+db:seed issues
+==========
+
+1. mysql -u root
+2. use panik_development
+3. truncate traffic_sources;
+4 . exit and run db:seed

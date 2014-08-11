@@ -1,7 +1,31 @@
 <% provide :title, "" %>
 
-<%= image_tag("kutorable/landing_construction.png", id: "construction_banner") %>
-
-
-
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+      <div class="voting_canvas">
+        <div class = "image-cropper">
+          <img class="" src="../../assets/animal_pictures/<%= @picture.file_name %>"/>
+        </div>
+  
+        <div id="voting_container">    
+          <table class = "table voting-tallies">
+            <tbody>
+              <tr>
+                <td width="47%">X: 50</th>
+                <td width="6%">|</th>
+                <td width="47%">O: 400 </th>
+              </tr>
+            </tbody>
+          </table>
+   
+          <ul class="nav nav-pills">
+            <li><%= link_to("meh.", vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true)%></li>
+            <li><%= link_to("AWW!", vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true)%></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 

@@ -12,20 +12,15 @@
 </head>
 <body>
 
-
-
-<!-- container wraps all page content -->
-<div class="container">
-  <!-- header partial rendered here -->
-  <%= render 'layouts/header' %>
+<!-- header partial rendered here -->
+<%= render 'layouts/header' %>
+  
   <!-- starter template div here -->  
-  <div class="starter-template">
     <!-- content of all the pages are 'yielded' here -->
     <%= yield %>
-    <!-- footer is yielded here --> 
-    <%= render 'layouts/footer' %>
-  </div>
-</div>
+  <!-- footer is yielded here --> 
+
+<%= render 'layouts/footer' %>
 
 <!-- added necessary js files -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

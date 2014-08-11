@@ -1,26 +1,189 @@
 @import "bootstrap";
 
 body {
+  padding: 10px;
   background-color: #88EDFF;
   color: #FF4137;
   font-family: 'Cabin', sans-serif;
 }
 
-.container {
+/* index css */
+
+.centered{
+  position: absolute;
+  left: -0%;
+  top: -0%;
 }
 
+.voting_canvas{
+  background-color: white;
+  padding: 10px;
+  margin: 0 auto 10px auto;
+  min-width: 300px;
+  max-width: 450px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  .image-cropper {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+   // border: 2px black solid;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-height: 100%;
+      max-width:100%;
+    }
+  }
+}
+
+#voting_container{
+  padding: 0;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+
+  ul{
+    width: 100%;
+    margin: 0px 0 10px 0;
+
+    li{
+      display: inline-block;
+      background-color: #E0FFFF;
+      width: 49%;
+      margin-left: 2%;
+      min-height: 75px;
+      border-radius: 10px;
+      padding-top: 10px;
+      text-align: center;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover{
+        background-color: #FF9E99;
+        font-size: 30px;
+        padding-top: 5px;
+      }
+    }
+
+    a{
+      color: black;
+
+      &:hover{
+        background-color: #FF9E99;
+      }
+    }
+  }
+}
+
+.table{
+  margin-top: 10px;
+  table-layout: fixed;
+  tbody{
+    tr{
+      td{
+        border: 0;
+        text-align: center;
+      }
+    } 
+  }
+}
+
+/* header css */
 #banner_logo {
-  height: 150px;
+  display: block;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
-#construction_banner {
-  
+#header_nav {
+  max-width: 370px;
+  margin: 15px auto;
+  font-size: 20px;
+
+  li {
+    width: 33%;
+    margin: 0;
+    text-align: center;
+
+    a {
+      color: #FF6961;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #FFC8C8;
+      }
+    }
+  }
+}
+
+/* footer css */
+
+footer {
+  margin-top: 10px;
+}
+
+
+
+#footer_icon {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  ul{
+    text-align: center;
+    li{
+      display: inline-block;
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      a{
+        display: block;
+        color: #FF6961;
+        background-color: inherit;
+      }
+    }
+  }
+}
+
+#footer_nav {
+  margin: 20px auto 10px auto;
+ ul{
+    text-align: center;
+    li{
+      display: inline-block;
+      border-radius: 5px;
+      margin-left: 10px;
+
+      &:hover{
+          background-color: white;
+        }
+
+      &:first-child {
+        margin-left: 0;
+      }
+      a{
+        padding: 10px;
+        display: block;
+        
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 #footer_fine_print {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: #626262;
-}
-
-.footer_icon {
-  
 }
