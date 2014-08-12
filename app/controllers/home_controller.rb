@@ -13,6 +13,9 @@ class HomeController < TrackedController
   def privacy
   end
 
+  def agreement
+  end
+
   def celebheadlines_index
     @headlines = CelebHeadline.all.order(:posted_at)
   end
