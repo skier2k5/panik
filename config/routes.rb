@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'about' => 'home#about'
   get 'contact' => 'home#contact'
   get 'privacy' => 'home#privacy'
-  get 'images_voting' => 'home#images_voting'
+  get 'agreement' => 'home#agreement'
 
   # Kutorable specific routes
   get 'vote' => 'kutorable/voting#vote'
