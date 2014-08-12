@@ -20,8 +20,8 @@
           </table>
    
           <ul class="nav nav-pills">
-            <li><%= link_to("meh.", vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true)%></li>
-            <li><%= link_to("AWW!", vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true)%></li>
+            <li><%= link_to("meh.", vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true, class: "reloadOnClick")%></li>
+            <li><%= link_to("AWW!", vote_path(:aid => 1, :apid => 1, :vote => "ugly"), :remote => true, class: "reloadOnClick")%></li>
           </ul>
         </div>
       </div>
