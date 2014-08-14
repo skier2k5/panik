@@ -13,8 +13,7 @@ class HomeController < TrackedController
   def privacy
   end
 
-  def images_voting
-    @picture = AnimalPicture.all.order("rand()").first
+  def agreement
   end
 
   def celebheadlines_index
