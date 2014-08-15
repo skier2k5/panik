@@ -12,9 +12,9 @@
           <table class = "table voting-tallies">
             <tbody>
               <tr>
-                <td width="47%">X: 50</th>
+                <td width="47%">X: <%= @picture.voting_aggregate.try(:ugly_votes) || 0 %></th>
                 <td width="6%">|</th>
-                <td width="47%">O: 400 </th>
+                <td width="47%">O: <%= @picture.voting_aggregate.try(:cute_votes) || 0 %></th>
               </tr>
             </tbody>
           </table>
