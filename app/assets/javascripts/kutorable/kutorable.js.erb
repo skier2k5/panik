@@ -1,5 +1,15 @@
-$(document).ready(function(){
+
+var voteClicked = function(){
   $(".reloadOnClick").click(function(){
     location.replace('/');
   });
-});
+};
+
+$(document).ready(voteClicked);
+$(document).on('page:load', voteClicked);
+
+/*$(document).ready(function(){
+  $(".reloadOnClick").click(function(){
+    location.replace('/');
+  });
+}); */
