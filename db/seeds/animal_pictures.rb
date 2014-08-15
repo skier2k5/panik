@@ -24,6 +24,8 @@ seed(
   :id => 1,
   :title => "Fluffy Dog",
   :file_name => "fluffy_dog.jpg",
+  :source => "Reddit",
+  :source_url => "reddit.com",
   :categories => [
     "Cute",
     "Dog",
