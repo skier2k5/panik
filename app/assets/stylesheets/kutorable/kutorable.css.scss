@@ -53,7 +53,6 @@ body {
 
     li{
       display: inline-block;
-      background-color: #E0FFFF;
       width: 49%;
       margin-left: 2%;
       min-height: 75px;
@@ -66,7 +65,7 @@ body {
       }
 
       &:hover{
-        background-color: #FF9E99;
+   //     background-color: #FF9E99;
         font-size: 30px;
         padding-top: 5px;
       }
@@ -76,8 +75,32 @@ body {
       color: black;
 
       &:hover{
-        background-color: #FF9E99;
+      //  background-color: #FF9E99;
       }
+    }
+  }
+}
+
+#mehVoteButton{
+  background-color: #E0FFFF;
+  &:hover{
+    background-color: #00BAFF;
+  }
+  a{
+    &:hover{
+      background-color: #00BAFF;
+    }
+  }
+}
+
+#cuteVoteButton{
+  background-color: #FFC8C8;
+  &:hover{
+    background-color: #FF817A;
+  }
+  a{
+    &:hover{
+      background-color: #FF817A;
     }
   }
 }
@@ -93,6 +116,14 @@ body {
       }
     } 
   }
+}
+
+.votingTallies{
+}
+
+.votingScoreImages{
+    margin-left: 2px;
+    height: 30px;
 }
 
 /* about privacy agreement contact css */
