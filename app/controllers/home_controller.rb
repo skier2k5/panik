@@ -21,7 +21,8 @@ class HomeController < TrackedController
   end
 
   def kutorable_index
-    @picture = AnimalPicture.all.order("rand()").first
+    ap_id = params['apid'].presence
+    @picture = AnimalPicture.find_by_id(ap_id) || AnimalPicture.all.order("rand()").first
     @current_arrival = current_arrival
   end
 
