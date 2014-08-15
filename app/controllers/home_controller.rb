@@ -24,6 +24,7 @@ class HomeController < TrackedController
     ap_id = params['apid'].presence
     @picture = AnimalPicture.find_by_id(ap_id) || AnimalPicture.all.order("rand()").first
     @current_arrival = current_arrival
+    @source = @picture.source || "NA"
   end
 
   def panikmedia_index

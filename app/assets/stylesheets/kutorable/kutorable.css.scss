@@ -41,6 +41,14 @@ body {
   }
 }
 
+#imageSource{
+  color: black;
+  font-size: 16px;
+  text-align: right;
+  margin-right: 5px;
+  float: right;
+}
+
 #voting_container{
   padding: 0;
   color: black;
@@ -65,7 +73,6 @@ body {
       }
 
       &:hover{
-   //     background-color: #FF9E99;
         font-size: 30px;
         padding-top: 5px;
       }
@@ -73,10 +80,6 @@ body {
 
     a{
       color: black;
-
-      &:hover{
-      //  background-color: #FF9E99;
-      }
     }
   }
 }

@@ -7,7 +7,14 @@
         <div class = "image-cropper">
           <img class="" src="../../assets/animal_pictures/<%= @picture.file_name %>"/>
         </div>
-  
+        <span id="imageSource">
+            Source: 
+              <% if @picture.source_url %>
+                <%=link_to(@source, @picture.source_url, target: "_blank")%>
+              <% else %>
+                <%= @source %>
+              <% end %>
+        </span>
         <div id="voting_container">    
           <table class = "table votingTallies">
             <tbody>
