@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140801025604) do
+ActiveRecord::Schema.define(version: 20140815024931) do
 
   create_table "animal_categories", force: true do |t|
     t.string "name"
@@ -28,8 +28,10 @@ ActiveRecord::Schema.define(version: 20140801025604) do
 
   create_table "animal_pictures", force: true do |t|
     t.string "title"
-    t.string "file_name", null: false
+    t.string "file_name",  null: false
     t.text   "caption"
+    t.string "source"
+    t.string "source_url"
   end
 
   create_table "animal_votes", force: true do |t|
