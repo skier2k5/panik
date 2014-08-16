@@ -1,7 +1,8 @@
 
 var voteClicked = function(){
   $(".reloadOnClick").click(function(){
-    location.replace('/');
+  	location.hash = "#imageAnchor";
+    location.reload();
   });
 };
 
