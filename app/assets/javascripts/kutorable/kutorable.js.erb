@@ -1,5 +1,9 @@
-$(document).ready(function(){
+
+var voteClicked = function(){
   $(".reloadOnClick").click(function(){
-    location.reload();
+    location.replace('/');
   });
-});
+};
+
+$(document).ready(voteClicked);
+$(document).on('page:load', voteClicked);
