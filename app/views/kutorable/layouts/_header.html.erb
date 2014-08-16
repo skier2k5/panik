@@ -1,18 +1,38 @@
-<div class="container">
+<!-- non-mobile header -->
+<div class="container hidden-xs">
   <div class="row">
-    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
+    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 ">
       <a href="/"><%= image_tag("kutorable/kutorable_logo.png", id: "banner_logo") %></a>
     </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
+
+    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
       <div id="header_nav">
         <ul class="nav nav-pills">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- mobile header -->
+<div class="container visible-xs">
+  <div class="row">
+    <div id="mobile-nav-container">
+      <div class="col-xs-9">
+        <a href="/"><%= image_tag("kutorable/kutorable_logo.png", id: "banner_logo") %></a>
+      </div>
+      
+      <div class="col-xs-3">
+        <div id="header_nav">
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
