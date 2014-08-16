@@ -20,14 +20,15 @@ body {
   padding: 10px;
   margin: 0 auto 10px auto;
   min-width: 300px;
-  max-width: 350px;
+  max-width: 320px;
+  max-height: 480px;
   border-radius: 10px;
   margin-bottom: 10px;
 
   .image-cropper {
     position: relative;
     width: 100%;
-    height: 320px;
+    height: 300px;
     overflow: hidden;
    // border: 2px black solid;
 
@@ -110,7 +111,7 @@ body {
 }
 
 .table{
-  margin-top: 10px;
+  margin-top: 5px;
   table-layout: fixed;
   tbody{
     tr{
@@ -123,6 +124,7 @@ body {
 }
 
 .votingTallies{
+  margin-bottom: 10px;
 }
 
 .votingScoreImages{
