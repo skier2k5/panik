@@ -182,13 +182,22 @@ body {
   }
 }
 
+#banner_logo_mob {
+  height: 75px;
+}
+
+#mobile-nav-container {
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
 /* footer css */
 
 footer {
   margin-top: 10px;
 }
-
-
 
 #footer_icon {
   margin-top: 20px;
