@@ -3,7 +3,6 @@
 <div id="content-container" class="container">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-      <a name="imageAnchor"></a>
       <div class="voting_canvas">
         <div class = "image-cropper">
           <img class="" src="../../assets/animal_pictures/<%= @picture.file_name %>"/>
@@ -11,6 +10,8 @@
         <span id="imageSource">
           <% if @picture.source_url %>
             Source:  <%=link_to(@source, @picture.source_url, target: "_blank")%>
+          <% else %>
+            Source: MIA
           <% end %>
         </span>
         <div id="voting_container">    
