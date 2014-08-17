@@ -194,7 +194,7 @@ seed(
   :title => "Flower Dog",
   :file_name => "dog3.jpg",
   :source => "Jessica Trinh",
-  :source__url => "http://jessicatrinh.com/",
+  :source_url => "http://jessicatrinh.com/",
   :categories => [
     "Cute",
     "Dog",

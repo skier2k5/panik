@@ -10,6 +10,8 @@
         <span id="imageSource">
           <% if @picture.source_url %>
             Source:  <%=link_to(@source, @picture.source_url, target: "_blank")%>
+          <% else %>
+            Source: MIA
           <% end %>
         </span>
         <div id="voting_container">    
