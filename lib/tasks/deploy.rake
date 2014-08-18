@@ -2,6 +2,7 @@ namespace :deploy do
   HEROKU_INFO = [
     {:app => "panik-media", :remote => "panik_heroku"},
     {:app => "celebheadlines", :remote => "ch_heroku"},
+    {:app => "kutorable", :remote => "kt_heroku"},
   ]
 
   desc "Deploy to all heroku apps"
