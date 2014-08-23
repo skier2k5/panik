@@ -3,7 +3,11 @@ module ApplicationHelper
   #Takes title of client, and adds the title of the current page
   def full_title(page_title)
     base_title = Client.current.title
-    base_title += " | #{page_title}" unless page_title.empty?
+    if page_title.empty?
+      base_title
+    else
+      base_title += " | #{page_title}"
+    end
   end
 
 end
