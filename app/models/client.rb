@@ -19,4 +19,9 @@ class Client < ActiveRecord::Base
   def search_path
     "#{Rails.root}/app/views/#{self.view_path}"
   end
+
+  def site_host
+    return self.host_name if !Rails.env.development?
+    return self.host_name.gsub(/\.\w+$/, ".dev")
+  end
 end

@@ -5,7 +5,7 @@
     <div class="col-sm-8 col-sm-offset-2 col-xs-12">
       <div class="voting_canvas">
         <div class = "image-cropper">
-          <img class="" src="../../assets/animal_pictures/<%= @picture.file_name %>"/>
+          <img id="animal_picture" src="../../assets/animal_pictures/<%= @picture.file_name %>"/>
         </div>
         <span id="imageSource">
           <% if @picture.source_url %>
@@ -14,25 +14,25 @@
             Source: MIA
           <% end %>
         </span>
-        <div id="voting_container">    
+        <div id="voting_container">
           <table class = "table votingTallies">
             <tbody>
               <tr>
-                <td width="14%"><img class = "votingScoreImages" 
+                <td width="14%"><img class = "votingScoreImages"
                                       src="../../assets//kutorable/sadface.png"/> </td>
                 <td width="31%"><%= @picture.voting_aggregate.try(:ugly_votes) || 0 %></td>
                 <td width="10%">|</td>
-                <td width="14%"><img class = "votingScoreImages" 
+                <td width="14%"><img class = "votingScoreImages"
                                       src="../../assets//kutorable/heart.png"/> </td>
                 <td width="31%"><%= @picture.voting_aggregate.try(:cute_votes) || 0 %></td>
               </tr>
             </tbody>
           </table>
-   
+
           <ul class="nav nav-pills">
-            <li id="mehVoteButton"><%= link_to("meh.", vote_path(:aid => @current_arrival.id, :apid => @picture.id, :vote => "ugly"), 
+            <li id="mehVoteButton"><%= link_to("meh.", vote_path(:aid => @current_arrival.id, :apid => @picture.id, :vote => "ugly"),
                     :remote => true, class: "reloadOnClick")%></li>
-            <li id="cuteVoteButton"><%= link_to("AWW!", vote_path(:aid => @current_arrival.id, :apid => @picture.id, :vote => "cute"), 
+            <li id="cuteVoteButton"><%= link_to("AWW!", vote_path(:aid => @current_arrival.id, :apid => @picture.id, :vote => "cute"),
                     :remote => true, class: "reloadOnClick")%></li>
           </ul>
         </div>
