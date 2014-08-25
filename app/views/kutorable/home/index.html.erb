@@ -19,11 +19,11 @@
             <tr>
               <td width="14%"><img class = "votingScoreImages"
                                     src="../../assets//kutorable/sadface.png"/> </td>
-              <td width="31%"><%= @picture.voting_aggregate.try(:ugly_votes) || 0 %></td>
+              <td id="ugly_votes" width="31%"><%= @picture.voting_aggregate.try(:ugly_votes) || 0 %></td>
               <td width="10%">|</td>
               <td width="14%"><img class = "votingScoreImages"
                                     src="../../assets//kutorable/heart.png"/> </td>
-              <td width="31%"><%= @picture.voting_aggregate.try(:cute_votes) || 0 %></td>
+              <td id="cute_votes" width="31%"><%= @picture.voting_aggregate.try(:cute_votes) || 0 %></td>
             </tr>
           </tbody>
         </table>

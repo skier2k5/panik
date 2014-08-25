@@ -10,6 +10,13 @@ var voteClicked = function(){
         $("#animal_picture")[0].src = "../../assets/animal_pictures/" + picture.file_name
         $("#mehVoteButton a")[0].href = $("#mehVoteButton a")[0].href.replace(/apid=([0-9]*)/, "apid=" + picture.id)
         $("#cuteVoteButton a")[0].href = $("#cuteVoteButton a")[0].href.replace(/apid=([0-9]*)/, "apid=" + picture.id)
+
+        var vt_ag = picture.voting_aggregate;
+        var cute_votes = vt_ag ? picture.voting_aggregate.cute_votes : "0";
+        var ugly_votes = vt_ag ?picture.voting_aggregate.ugly_votes : "0";
+
+        $("#cute_votes").text(cute_votes);
+        $("#ugly_votes").text(ugly_votes);
       }
     });
   });
