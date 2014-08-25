@@ -7,7 +7,7 @@ var voteClicked = function(){
       complete: function (response) {
         var picture = JSON.parse(response.responseText);
 
-        $("#animal_picture")[0].src = "http://<%= Client.current.site_host %>/assets/animal_pictures/" + picture.file_name
+        $("#animal_picture")[0].src = "http://<%= Client.current.try(:site_host) %>/assets/animal_pictures/" + picture.file_name
         $("#mehVoteButton a")[0].href = $("#mehVoteButton a")[0].href.replace(/apid=([0-9]*)/, "apid=" + picture.id)
         $("#cuteVoteButton a")[0].href = $("#cuteVoteButton a")[0].href.replace(/apid=([0-9]*)/, "apid=" + picture.id)
       }
