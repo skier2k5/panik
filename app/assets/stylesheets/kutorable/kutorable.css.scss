@@ -197,9 +197,13 @@ footer {
   margin-top: 10px;
 }
 
-.mailing-list {
+.mailing-list, .sucess-signup {
   width: 300px;
   text-align: center;
+}
+
+.sucess-signup {
+  display: none;
 }
 
 #footer_icon {

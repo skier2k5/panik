@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   # Kutorable specific routes
   get 'vote' => 'kutorable/voting#vote'
   get 'vote/reload' => 'kutorable/home#random_animal_picture'
+  post 'signup' => 'kutorable/home#mailing_list_sign_up'
 end
