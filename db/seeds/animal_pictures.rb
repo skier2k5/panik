@@ -970,3 +970,452 @@ seed(
   :categories => []
 )
 
+seed(
+  :id => 101,
+  :title => "Winston at the Doctor",
+  :file_name => "101.jpg",
+  :source => "reddit",
+  :source_url => "http://www.reddit.com/r/aww/comments/2efbru/winston_was_fearless_for_his_first_vet_exam/",
+  :categories => []
+)
+
+seed(
+  :id => 102,
+  :title => "Cute Kitty",
+  :file_name => "102.jpg",
+  :source => "Tarsem Saini",
+  :source_url => "http://www.desicomments.com/cute/cute-pet/",
+  :categories => []
+)
+
+seed(
+  :id => 103,
+  :title => "Book Puppy",
+  :file_name => "103.jpg",
+  :source => "That Cute",
+  :source_url => "http://thatcute.com/some-cute-pets-favorite-learning-1.html",
+  :categories => []
+)
+
+seed(
+  :id => 104,
+  :title => "Bunny Puppy",
+  :file_name => "104.jpg",
+  :source => "Stick Boy Daily",
+  :source_url => "hhttp://www.stickboydaily.com/really/in-pictures-some-seriously-cute-pets/",
+  :categories => []
+)
+
+seed(
+  :id => 105,
+  :title => "Baby Pets",
+  :file_name => "105.jpg",
+  :source => "FanPop",
+  :source_url => "http://www.fanpop.com/clubs/babies-pets-and-animals/images/16883289/title/cute-photo",
+  :categories => []
+)
+
+seed(
+  :id => 106,
+  :title => "Baby Pets",
+  :file_name => "106.jpg",
+  :source => "Rinku Bal",
+  :source_url => "http://www.desicomments.com/pets/cute-pets/",
+  :categories => []
+)
+
+seed(
+  :id => 107,
+  :title => "Baby Mouse",
+  :file_name => "107.jpg",
+  :source => "xxrobot",
+  :source_url => "https://www.flickr.com/photos/robo7/2372392467/in/photostream/",
+  :categories => []
+)
+
+seed(
+  :id => 108,
+  :title => "White Puppy",
+  :file_name => "108.jpg",
+  :source => "LIFEDaily",
+  :source_url => "http://www.lifedaily.com/do-you-own-the-cutest-dog-in-the-world/",
+  :categories => []
+)
+
+seed(
+  :id => 109,
+  :title => "Confused Terrier",
+  :file_name => "109.jpg",
+  :source => "LIFEDaily",
+  :source_url => "http://www.lifedaily.com/do-you-own-the-cutest-dog-in-the-world/",
+  :categories => []
+)
+
+seed(
+  :id => 110,
+  :title => "Shih Tzu",
+  :file_name => "110.jpg",
+  :source => "LIFEDaily",
+  :source_url => "http://www.lifedaily.com/do-you-own-the-cutest-dog-in-the-world/",
+  :categories => []
+)
+
+seed(
+  :id => 111,
+  :title => "Husky",
+  :file_name => "111.jpg",
+  :source => "cutprintfilm",
+  :source_url => "http://cutprintfilm.com/wp-content/uploads/2014/03/41.jpg?w=300",
+  :categories => []
+)
+
+seed(
+  :id => 112,
+  :title => "Parakeet",
+  :file_name => "112.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-1/",
+  :categories => []
+)
+
+seed(
+  :id => 113,
+  :title => "Bunny",
+  :file_name => "113.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-2/",
+  :categories => []
+)
+
+seed(
+  :id => 114,
+  :title => "Chick",
+  :file_name => "114.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-3/",
+  :categories => []
+)
+
+seed(
+  :id => 115,
+  :title => "Gofer",
+  :file_name => "115.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-4/",
+  :categories => []
+)
+
+seed(
+  :id => 116,
+  :title => "Big Bunny",
+  :file_name => "116.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-6/",
+  :categories => []
+)
+
+seed(
+  :id => 117,
+  :title => "Lion Cubs",
+  :file_name => "117.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-7/",
+  :categories => []
+)
+
+seed(
+  :id => 118,
+  :title => "Wabbit",
+  :file_name => "118.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-8/",
+  :categories => []
+)
+
+seed(
+  :id => 119,
+  :title => "Kittens",
+  :file_name => "119.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-9/",
+  :categories => []
+)
+
+seed(
+  :id => 120,
+  :title => "White Mouse",
+  :file_name => "120.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-10/",
+  :categories => []
+)
+
+seed(
+  :id => 121,
+  :title => "Owly",
+  :file_name => "121.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-11/",
+  :categories => []
+)
+
+seed(
+  :id => 122,
+  :title => "Baby Bunny",
+  :file_name => "122.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-12/",
+  :categories => []
+)
+
+seed(
+  :id => 123,
+  :title => "Hiding Kitty",
+  :file_name => "123.jpg",
+  :source => "Daily Fun Dose",
+  :source_url => "http://www.dailyfundose.com/2011/09/super-cute-pets/dailyfundose_com-super-cute-pet-13/",
+  :categories => []
+)
+
+seed(
+  :id => 124,
+  :title => "Sleeping pets",
+  :file_name => "124.jpg",
+  :source => "omgcutethings",
+  :source_url => "http://omgcutethings.com/wp-content/uploads/2013/08/cute-pets-001-08172013.jpg",
+  :categories => []
+)
+
+seed(
+  :id => 125,
+  :title => "Mama dog",
+  :file_name => "125.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 126,
+  :title => "Fat Dog",
+  :file_name => "126.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 127,
+  :title => "Mountain dogs",
+  :file_name => "127.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 128,
+  :title => "Baby Husky",
+  :file_name => "128.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 129,
+  :title => "Fluffy dog",
+  :file_name => "129.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 130,
+  :title => "Rawrr",
+  :file_name => "130.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 131,
+  :title => "Underside Kitty",
+  :file_name => "131.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 132,
+  :title => "Super fluffy dog",
+  :file_name => "132.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 133,
+  :title => "Guitar Pup",
+  :file_name => "133.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 134,
+  :title => "Teenie Puppy",
+  :file_name => "134.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 135,
+  :title => "Licking Puppy",
+  :file_name => "135.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 136,
+  :title => "Snow Nose",
+  :file_name => "136.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 137,
+  :title => "Sleeping Puppy",
+  :file_name => "137.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 138,
+  :title => "Cute Puppy",
+  :file_name => "138.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 139,
+  :title => "Hair Do Puppy",
+  :file_name => "139.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 140,
+  :title => "Micro Puppy",
+  :file_name => "140.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 141,
+  :title => "Cute Kitty",
+  :file_name => "141.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 142,
+  :title => "Pumpking Dog",
+  :file_name => "142.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 143,
+  :title => "Fluffy Puppies",
+  :file_name => "143.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 144,
+  :title => "Sink Ducklings",
+  :file_name => "144.jpg",
+  :source => "igirlsgames",
+  :source_url => "http://www.igirlsgames.com/member/blog/post/uid/97418/pid/173041/",
+  :categories => []
+)
+
+seed(
+  :id => 145,
+  :title => "Bucket O Kitties",
+  :file_name => "145.jpg",
+  :source => "honeythediva",
+  :source_url => "https://honeythediva.wordpress.com/category/cute-pets/",
+  :categories => []
+)
+
+seed(
+  :id => 146,
+  :title => "Rug Dog",
+  :file_name => "146.jpg",
+  :source => "honeythediva",
+  :source_url => "https://honeythediva.wordpress.com/category/cute-pets/",
+  :categories => []
+)
+
+seed(
+  :id => 147,
+  :title => "Curious Kitten",
+  :file_name => "147.jpg",
+  :source => "honeythediva",
+  :source_url => "https://honeythediva.wordpress.com/category/cute-pets/",
+  :categories => []
+)
+
+seed(
+  :id => 148,
+  :title => "Lying Kitten",
+  :file_name => "148.jpg",
+  :source => "honeythediva",
+  :source_url => "https://honeythediva.wordpress.com/category/cute-pets/",
+  :categories => []
+)
+
+seed(
+  :id => 149,
+  :title => "Puppy",
+  :file_name => "149.jpg",
+  :source => "honeythediva",
+  :source_url => "https://honeythediva.wordpress.com/category/cute-pets/",
+  :categories => []
+)
+
+seed(
+  :id => 150,
+  :title => "Snow Dog",
+  :file_name => "150.jpg",
+  :source => "honeythediva",
+  :source_url => "https://honeythediva.wordpress.com/category/cute-pets/",
+  :categories => []
+)
