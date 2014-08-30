@@ -14,13 +14,19 @@ class Kutorable::HomeController < TrackedController
   end
 
   def mailing_list_sign_up
-    new_email = params[:email].presence
-    email = Email.where(:email => new_email, :client_id => Client.current.id).first
-    if email.nil?
-      Email.create! :email => new_email,
-                    :client_id => Client.current.id,
-                    :arrival_id => current_arrival.id
-    end
+    @email = Email.new(:email => params[:email].presence,
+                       :client_id => Client.current.id,
+                       :arrival_id => current_arrival.id )
+    @email.save
     render :text => "OK"
+
+    #new_email = params[:email].presence
+    #email = Email.where(:email => new_email, :client_id => Client.current.id).first
+    #if email.nil?
+    #  Email.create! :email => new_email,
+    #                :client_id => Client.current.id,
+    #                :arrival_id => current_arrival.id
+    #end
+    #render :text => "OK"
   end
 end
