@@ -14,7 +14,7 @@ class Kutorable::HomeController < TrackedController
       }
     end
 
-    render :json => random_picture
+    render :json => random_picture || {}
   end
 
   def mailing_list_sign_up
