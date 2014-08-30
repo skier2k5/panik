@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140815024931) do
+ActiveRecord::Schema.define(version: 20140829020823) do
 
   create_table "animal_categories", force: true do |t|
     t.string "name"
@@ -98,6 +98,19 @@ ActiveRecord::Schema.define(version: 20140815024931) do
     t.string "title"
     t.string "view_path"
   end
+
+  create_table "emails", force: true do |t|
+    t.integer  "arrival_id"
+    t.integer  "client_id"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "emails", ["arrival_id"], name: "index_emails_on_arrival_id", using: :btree
+  add_index "emails", ["client_id", "email"], name: "index_emails_on_client_id_and_email", unique: true, using: :btree
+  add_index "emails", ["client_id"], name: "index_emails_on_client_id", using: :btree
+  add_index "emails", ["created_at"], name: "index_emails_on_created_at", using: :btree
 
   create_table "headline_clicks", force: true do |t|
     t.integer  "arrival_id",        null: false

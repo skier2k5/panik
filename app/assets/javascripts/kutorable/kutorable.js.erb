@@ -1,4 +1,4 @@
-var voteClicked = function(){
+var readyFunction = function(){
   $(".reloadOnClick").click(function(){
     $.ajax({
       url: '/vote/reload',
@@ -23,7 +23,21 @@ var voteClicked = function(){
       }
     });
   });
+
+  $("#mailing_list").click(function() {
+    var email = $("#email_field").val();
+    $.ajax({
+      url: '/signup',
+      type: 'POST',
+      async: true,
+      data: {email: email},
+      complete: function (response) {
+        $(".mailing-list").hide();
+        $(".sucess-signup").show();
+      }
+    });
+  });
 };
 
-$(document).ready(voteClicked);
-$(document).on('page:load', voteClicked);
+$(document).ready(readyFunction);
+$(document).on('page:load', readyFunction);
