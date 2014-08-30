@@ -14,9 +14,9 @@ class Kutorable::HomeController < TrackedController
   end
 
   def mailing_list_sign_up
-    @email = Email.create(:email => params[:email].presence,
-                       :client_id => Client.current.id,
-                       :arrival_id => current_arrival.id )
+    @email = Email.create :email => params[:email].presence,
+                          :client_id => Client.current.id,
+                          :arrival_id => current_arrival.id 
     render :text => "OK"
   end
 end
