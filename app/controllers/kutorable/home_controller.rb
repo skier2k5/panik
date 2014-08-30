@@ -12,9 +12,17 @@ class Kutorable::HomeController < TrackedController
         :source => picture.source,
         :source_url => picture.source_url,
       }
+    else
+      random_picture = {
+        :id => 0,
+        :file_name => "end_image.jpg",
+        :voting_aggregate => nil,
+        :source => nil,
+        :source_url => nil,
+      }
     end
 
-    render :json => random_picture || {}
+    render :json => random_picture
   end
 
   def mailing_list_sign_up

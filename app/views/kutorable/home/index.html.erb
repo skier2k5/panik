@@ -4,7 +4,7 @@
   <div class="row">
     <div class="voting_canvas">
       <div class = "image-cropper">
-        <img id="animal_picture" src="../../assets/animal_pictures/<%= @picture.try(:file_name) || "EndImage.jpg" %>"/>
+        <img id="animal_picture" src="../../assets/animal_pictures/<%= @picture.try(:file_name) || "end_image.jpg" %>"/>
       </div>
       <span id="imageSource">
         <% if @picture.try(:source_url) %>
