@@ -4,6 +4,10 @@
   <title><%= full_title(yield(:title)) %></title>
   <meta name="description" content="Bringing the cutest pet pictures of the interwebs to you!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <% if @picture %>
+    <meta property="og:image" content="../../assets/animal_pictures/<%= @picture.file_name %>" />
+  <% end %> 
   <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
