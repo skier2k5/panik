@@ -5,6 +5,8 @@ class Kutorable::HomeController < TrackedController
       :id => picture.id,
       :file_name => picture.file_name,
       :voting_aggregate => picture.voting_aggregate,
+      :source => picture.source,
+      :source_url => picture.source_url,
     }
 
     render :json => random_picture

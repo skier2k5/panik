@@ -13,10 +13,13 @@ var voteClicked = function(){
 
         var vt_ag = picture.voting_aggregate;
         var cute_votes = vt_ag ? picture.voting_aggregate.cute_votes : "0";
-        var ugly_votes = vt_ag ?picture.voting_aggregate.ugly_votes : "0";
+        var ugly_votes = vt_ag ? picture.voting_aggregate.ugly_votes : "0";
 
         $("#cute_votes").text(cute_votes);
         $("#ugly_votes").text(ugly_votes);
+
+        var source_text = picture.source ? "Source: <a href='" + picture.source_url + "' target='_blank'>" + picture.source + "</a>" : "Source: MIA";
+        $("#imageSource").html(source_text);
       }
     });
   });
