@@ -22,9 +22,11 @@ class HomeController < TrackedController
 
   def kutorable_index
     ap_id = params['apid'].presence
-    @picture = AnimalPicture.find_by_id(ap_id) || AnimalPicture.all.order("rand()").first
+    @picture = AnimalPicture.find_by_id(ap_id) || AnimalPicture.joins("LEFT JOIN animal_votes av ON av.animal_picture_id = animal_pictures.id AND av.arrival_id = #{current_arrival.id}")
+        .where("av.id IS NULL")
+        .order("rand()").first
     @current_arrival = current_arrival
-    @source = @picture.source || "missing"
+    @source = @picture.try(:source) || "missing"
   end
 
   def panikmedia_index

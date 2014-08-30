@@ -4,10 +4,10 @@
   <div class="row">
     <div class="voting_canvas">
       <div class = "image-cropper">
-        <img id="animal_picture" src="../../assets/animal_pictures/<%= @picture.file_name %>"/>
+        <img id="animal_picture" src="../../assets/animal_pictures/<%= @picture.try(:file_name) || "EndImage.jpg" %>"/>
       </div>
       <span id="imageSource">
-        <% if @picture.source_url %>
+        <% if @picture.try(:source_url) %>
           Source:  <%=link_to(@source, @picture.source_url, target: "_blank")%>
         <% else %>
           Source: MIA
@@ -19,19 +19,19 @@
             <tr>
               <td width="14%"><img class = "votingScoreImages"
                                     src="../../assets//kutorable/sadface.png"/> </td>
-              <td id="ugly_votes" width="31%"><%= @picture.voting_aggregate.try(:ugly_votes) || 0 %></td>
+              <td id="ugly_votes" width="31%"><%= @picture.try(:voting_aggregate).try(:ugly_votes) || 0 %></td>
               <td width="10%">|</td>
               <td width="14%"><img class = "votingScoreImages"
                                     src="../../assets//kutorable/heart.png"/> </td>
-              <td id="cute_votes" width="31%"><%= @picture.voting_aggregate.try(:cute_votes) || 0 %></td>
+              <td id="cute_votes" width="31%"><%= @picture.try(:voting_aggregate).try(:cute_votes) || 0 %></td>
             </tr>
           </tbody>
         </table>
 
         <ul class="nav nav-pills">
-          <li id="mehVoteButton"><%= link_to("meh.", vote_path(:aid => @current_arrival.id, :apid => @picture.id, :vote => "ugly"),
+          <li id="mehVoteButton"><%= link_to("meh.", vote_path(:aid => @current_arrival.id, :apid => @picture.try(:id), :vote => "ugly"),
                   :remote => true, class: "reloadOnClick")%></li>
-          <li id="cuteVoteButton"><%= link_to("AWW!", vote_path(:aid => @current_arrival.id, :apid => @picture.id, :vote => "cute"),
+          <li id="cuteVoteButton"><%= link_to("AWW!", vote_path(:aid => @current_arrival.id, :apid => @picture.try(:id), :vote => "cute"),
                   :remote => true, class: "reloadOnClick")%></li>
         </ul>
       </div>
