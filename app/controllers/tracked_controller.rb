@@ -36,7 +36,7 @@ class TrackedController < ApplicationController
     end
 
     session[:arrival_id] = @current_arrival.id
-    session[:last_seen] = Time.now.to_i
+    session[:last_seen] = Time.now.to_i if session[:last_seen].nil?
 
     @current_arrival
   end
