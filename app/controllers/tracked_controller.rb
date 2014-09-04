@@ -12,6 +12,11 @@ class TrackedController < ApplicationController
   def current_arrival
     return @current_arrival if @current_arrival
 
+    if session[:last_seen] < Time.now.to_i - 86400
+      session[:arrival_id] = nil
+      session[:last_seen] = nil
+    end
+
     user_agent = request.env['HTTP_USER_AGENT'].nil? ? nil : request.env['HTTP_USER_AGENT'].unpack("C*").pack("U*")
     referer = request.env['HTTP_REFERER'].nil? ? nil : request.env['HTTP_REFERER'].unpack("C*").pack("U*")
     ip = request.remote_ip
@@ -31,6 +36,7 @@ class TrackedController < ApplicationController
     end
 
     session[:arrival_id] = @current_arrival.id
+    session[:last_seen] = Time.now.to_i
 
     @current_arrival
   end
