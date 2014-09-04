@@ -12,7 +12,7 @@ class TrackedController < ApplicationController
   def current_arrival
     return @current_arrival if @current_arrival
 
-    if session[:last_seen] < Time.now.to_i - 86400
+    if session[:last_seen] && session[:last_seen] < Time.now.to_i - 86400
       session[:arrival_id] = nil
       session[:last_seen] = nil
     end
