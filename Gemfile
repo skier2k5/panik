@@ -8,8 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'feedjira'
 
-
-#New gems added here
+gem 'rails_12factor'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'railties', '>=4.0.0'
 gem 'sass', '~>3.2.0'
